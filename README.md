@@ -2,6 +2,8 @@
 
 Elgg map plugin for showing groups in Google Maps. GroupsMap requires Profile Manager plugin, based on "location" field and offers multiple search options.
 
+This plugin requires the Maps API plugin (https://github.com/nlybe/Elgg-MapsAPI)
+
 == Contents ==
 
 1. Features
