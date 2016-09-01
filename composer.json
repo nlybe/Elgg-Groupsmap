@@ -1,0 +1,9 @@
+{
+    "name": "nlybe/groupsmap",
+    "type": "elgg-plugin",
+    "require": {
+        "composer/installers": ">=1.0.8",
+        "nlybe/amap_maps_api": "2.9.x"
+    },
+    "license": "GPL-2.0"
+}

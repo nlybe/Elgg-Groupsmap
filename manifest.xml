@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+    <name>Map of Groups</name>
+    <id>groupsmap</id>
+    <author>Nikos Lyberakis</author>
+    <version>2.7.2</version>
+    <category>bundled</category>
+    <category>content</category>
+    <category>Maps</category>
+    <description>Show groups on Google Map</description>
+    <website>https://github.com/nlybe/</website>
+    <copyright>(C) Nikos Lyberakis 2012 - 2016</copyright>
+    <license>GNU General Public License version 2</license>
+    <requires>
+        <type>elgg_release</type>
+        <version>2.1</version>
+    </requires>
+    <requires>
+        <type>plugin</type>
+        <name>groups</name>
+    </requires>
+    <requires>
+        <type>plugin</type>
+        <name>amap_maps_api</name>
+        <version>2.9</version>
+    </requires>    
+    <requires>
+        <type>priority</type>
+        <plugin>amap_maps_api</plugin>
+        <priority>after</priority>
+    </requires>     
+    <activate_on_install>false</activate_on_install>
+</plugin_manifest>
