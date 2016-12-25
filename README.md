@@ -1,4 +1,7 @@
-##GroupsMap Plugin for Elgg##
+GroupsMap Plugin for Elgg
+==========================
+
+![Elgg 2.1](https://img.shields.io/badge/Elgg-2.1-orange.svg?style=flat-square)
 
 Elgg map plugin for showing groups in Google Maps. GroupsMap requires Profile Manager plugin, based on "location" field and offers multiple search options.
 
@@ -6,13 +9,7 @@ This plugin requires the Maps API plugin (https://github.com/nlybe/Elgg-MapsAPI)
 
 Demo: http://nikos.lyberakis.gr/elgg/groupsmap
 
-== Contents ==
-
-1. Features
-2. Installation
-
-
-###1. Features###
+###Features###
 
 - Option to display groups around current logged-in user's location
 - Option to show initially all groups, newest groups or groups around current loggedin user's location
@@ -32,7 +29,7 @@ Demo: http://nikos.lyberakis.gr/elgg/groupsmap
 - Multiple configuration options about google maps
 
 
-###2. Installation###
+###Installation###
 
 Requires: Elgg 2.1 or higher
 

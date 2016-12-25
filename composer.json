@@ -1,9 +1,27 @@
 {
     "name": "nlybe/groupsmap",
+    "description": "Add maps and location functionality for Elgg groups ",
     "type": "elgg-plugin",
+    "keywords": [
+        "elgg",
+        "plugin",
+        "maps",
+        "groups"
+    ],
+    "homepage": "https://github.com/nlybe/Elgg-Groupsmap",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "Nikos Lyberakis",
+            "email": "nikos@lyberakis.gr",
+            "role": "Elgg Developer"
+        }
+    ],
     "require": {
         "composer/installers": ">=1.0.8",
         "nlybe/amap_maps_api": "2.9.x"
     },
-    "license": "GPL-2.0"
+    "extra": {
+        "installer-name": "groupsmap"
+    }
 }

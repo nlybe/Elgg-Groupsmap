@@ -41,10 +41,10 @@ $title = elgg_echo('groupsmap:all');
 $options = array('type' => 'group', 'full_view' => false);
 
 // get variables
-$s_location = $_GET["l"];
-$s_radius = (int) $_GET["r"];
-$s_keyword = $_GET["q"];
-$showradius = $_GET["sr"];
+$s_location = get_input("l");
+$s_radius = (int) get_input("r");
+$s_keyword = get_input("q");
+$showradius = get_input("sr");
 // get initial load option from settings
 $initial_load = elgg_get_plugin_setting('initial_load', 'groupsmap');
 

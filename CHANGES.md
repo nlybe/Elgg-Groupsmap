@@ -1,6 +1,8 @@
-******* GroupsMap Plugin *******
-
 CHANGE LOG
+
+2.7.3	(Dec 2016)
+--------------------------------
+- Fixed: $_GET replaced by get_input()
 
 2.7.2	(Aug 2016)
 --------------------------------
