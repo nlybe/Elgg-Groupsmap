@@ -1,5 +1,9 @@
 CHANGE LOG
 
+2.7.4	(Dec 2016)
+--------------------------------
+- Added: Set context on group's map page
+
 2.7.3	(Dec 2016)
 --------------------------------
 - Fixed: $_GET replaced by get_input()

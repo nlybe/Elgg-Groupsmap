@@ -67,13 +67,14 @@ function groupsmap_init() {
  * @return bool
  */
 function groupsmap_page_handler($page) {
-	$vars = array();
-	$vars['page'] = $page[0];
+    $vars = array();
+    $vars['page'] = $page[0];
+    elgg_push_context('groupsmap');
 
-	$resource_vars = array();
-	echo elgg_view_resource('groupsmap/nearby', $resource_vars);
-    
-	return true;
+    $resource_vars = array();
+    echo elgg_view_resource('groupsmap/nearby', $resource_vars);
+
+    return true;
 }
 
 /**
