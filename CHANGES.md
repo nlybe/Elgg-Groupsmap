@@ -1,6 +1,6 @@
 CHANGE LOG
 
-2.7.4	(Dec 2016)
+2.7.4	(Feb 2017)
 --------------------------------
 - Added: Set context on group's map page
 
