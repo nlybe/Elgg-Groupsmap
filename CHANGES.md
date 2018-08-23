@@ -1,5 +1,9 @@
 CHANGE LOG
 
+2.7.5	(Aug 2018)
+--------------------------------
+- Fixed: When group_tools plugin is enabled, do not show the map tab on groups/edit view
+
 2.7.4	(Feb 2017)
 --------------------------------
 - Added: Set context on group's map page

@@ -9,7 +9,7 @@ This plugin requires the Maps API plugin (https://github.com/nlybe/Elgg-MapsAPI)
 
 Demo: http://nikos.lyberakis.gr/elgg/groupsmap
 
-###Features###
+### Features 
 
 - Option to display groups around current logged-in user's location
 - Option to show initially all groups, newest groups or groups around current loggedin user's location
@@ -28,8 +28,7 @@ Demo: http://nikos.lyberakis.gr/elgg/groupsmap
 - Tool for batch geolocation of groups already exists on Elgg site
 - Multiple configuration options about google maps
 
-
-###Installation###
+### Installation 
 
 Requires: Elgg 2.1 or higher
 
@@ -42,6 +41,7 @@ Requires: Elgg 2.1 or higher
 7. If you are using old version of groupsmap plugin (prior to 1.8.5 or 1.9.5), change the name of the field "grouplocation" to "location" and then repeat step 5.
 
 
-
+### Improvements
+- Make autocomplete location input compatible with profile manager (group list of field types)
 
 

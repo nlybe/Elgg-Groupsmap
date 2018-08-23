@@ -17,8 +17,12 @@
  */
 function add_groups_map_tab($hook, $type, $menu, $params) {
     if(elgg_is_active_plugin('amap_maps_api') && amap_ma_check_if_add_tab_on_entity_page('groupsmap')) {
-        if(elgg_in_context('groups')) {
+        if(
+                (!elgg_is_active_plugin('group_tools') && elgg_in_context('groups')) || 
+                (elgg_is_active_plugin('group_tools') && elgg_in_context('groups') && elgg_in_context('group_sort_menu'))
+            ) {
             $filter_context = $params['filter_context'];
+            
             $options = array(
                 'name' => 'groupsmap',
                 'text' => elgg_echo("groupsmap:menu"),
@@ -33,4 +37,5 @@ function add_groups_map_tab($hook, $type, $menu, $params) {
         return $menu;
     }
 }
+
 

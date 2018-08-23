@@ -5,13 +5,12 @@
  */
 
 if(!elgg_is_active_plugin("amap_maps_api")){
-	register_error(elgg_echo("groupsmap:settings:amap_maps_api:notenabled"));
-	forward(REFERER);
+    register_error(elgg_echo("groupsmap:settings:amap_maps_api:notenabled"));
+    forward(REFERER);
 }
 
 elgg_load_library('elgg:groupsmap');  
 elgg_load_library('elgg:amap_maps_api');
-// elgg_load_library('elgg:amap_maps_api_geocoder'); // OBS
 elgg_load_library('elgg:amap_maps_api_geo'); 
 
 $user = elgg_get_logged_in_user_entity();
@@ -29,7 +28,7 @@ $mapheight = amap_ma_get_map_height();
 //$defaultlocation = amap_ma_get_map_default_location(); //OBS
 
 if (amap_ma_check_if_add_tab_on_entity_page('groupsmap'))	{
-	elgg_push_breadcrumb(elgg_echo('groups'), "groups");
+    elgg_push_breadcrumb(elgg_echo('groups'), "groups");
 }
 
 // set breadcrumb

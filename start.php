@@ -38,7 +38,7 @@ function groupsmap_init() {
  
     // Add filter-menu on groups
     elgg_register_plugin_hook_handler('register', 'menu:filter', 'add_groups_map_tab');
-        
+    
     // Register ajax view for groups geolocation
     elgg_register_ajax_view('groupsmap/geolocategroups');
 
