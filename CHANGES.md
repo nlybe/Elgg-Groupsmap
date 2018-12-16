@@ -1,5 +1,10 @@
 CHANGE LOG
 
+2.7.6	(Dec 2018)
+--------------------------------
+- Improved the way that location is specified
+- Small code improvements
+
 2.7.5	(Aug 2018)
 --------------------------------
 - Fixed: When group_tools plugin is enabled, do not show the map tab on groups/edit view

@@ -81,26 +81,31 @@ function groupsmap_page_handler($page) {
  * Geolocate Group based on location field
  */
 function groupsmap_geolocation($event, $object_type, $object) {
-	$latitude = get_input("latitude");
-	$longitude = get_input("longitude");
-	if ($latitude && $longitude)	{
-		$object->setLatLong($latitude,$longitude);
-	}
-	else {
-		$location = $object->location;
-		$country = $object->country;
-		if ($location || $country) {
-			$loc_to_geo = ($location?$location:'');
-			if ($country) {
-				$loc_to_geo = ($loc_to_geo?$loc_to_geo.', '.$country:$country);
-			}
-			
-			$ccc = amap_ma_save_object_coords($loc_to_geo, $object, 'amap_maps_api');
-		}		
-		else if (!$location && !$country) {
-			$object->setLatLong('','');
-		}
-	}
+    $latitude = get_input("latitude");
+    $longitude = get_input("longitude");
+    
+    if (!$object->location && isset($latitude) && isset($longitude)) {
+        $object->location = amap_ma_reverse_geocoding($latitude, $longitude);
+    }
+        
+    if ($latitude && $longitude)	{
+        $object->setLatLong($latitude,$longitude);
+    }
+    else {
+        $location = $object->location;
+        $country = $object->country;
+        if ($location || $country) {
+            $loc_to_geo = ($location?$location:'');
+            if ($country) {
+                $loc_to_geo = ($loc_to_geo?$loc_to_geo.', '.$country:$country);
+            }
 
-	return true;
+            $ccc = amap_ma_save_object_coords($loc_to_geo, $object, 'amap_maps_api');
+        }		
+        else if (!$location && !$country) {
+            $object->setLatLong('','');
+        }
+    }
+
+    return true;
 }

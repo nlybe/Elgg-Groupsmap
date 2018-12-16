@@ -1,7 +1,7 @@
 GroupsMap Plugin for Elgg
 ==========================
 
-![Elgg 2.1](https://img.shields.io/badge/Elgg-2.1-orange.svg?style=flat-square)
+![Elgg 2.3](https://img.shields.io/badge/Elgg-2.3-orange.svg?style=flat-square)
 
 Elgg map plugin for showing groups in Google Maps. GroupsMap requires Profile Manager plugin, based on "location" field and offers multiple search options.
 
@@ -30,7 +30,7 @@ Demo: http://nikos.lyberakis.gr/elgg/groupsmap
 
 ### Installation 
 
-Requires: Elgg 2.1 or higher
+Requires: Elgg 2.3 or higher
 
 1. Upload amap_maps_api plugin in "/mod/" elgg folder and activate it
 2. In "Administration/Configure/Settings/AgoraMap Maps API" you must enter API keys and basic map options

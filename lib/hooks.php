@@ -16,26 +16,27 @@
  * @return type
  */
 function add_groups_map_tab($hook, $type, $menu, $params) {
-    if(elgg_is_active_plugin('amap_maps_api') && amap_ma_check_if_add_tab_on_entity_page('groupsmap')) {
-        if(
-                (!elgg_is_active_plugin('group_tools') && elgg_in_context('groups')) || 
-                (elgg_is_active_plugin('group_tools') && elgg_in_context('groups') && elgg_in_context('group_sort_menu'))
-            ) {
-            $filter_context = $params['filter_context'];
-            
-            $options = array(
-                'name' => 'groupsmap',
-                'text' => elgg_echo("groupsmap:menu"),
-                'href' => "groupsmap",
-                'priority' => '600',
-            );	
-            if ($filter_context == 'groupsmap') {
-                $options['selected'] = true;
-            }
-            $menu[] = ElggMenuItem::factory($options);		
+    if (
+            elgg_is_active_plugin('amap_maps_api') 
+            && amap_ma_check_if_add_tab_on_entity_page('groupsmap')
+            && elgg_in_context('groups')
+        ) {
+
+        $filter_context = $params['filter_context'];
+
+        $options = array(
+            'name' => 'groupsmap',
+            'text' => elgg_echo("groupsmap:menu"),
+            'href' => "groupsmap",
+            'priority' => '1000',
+        );	
+        if ($filter_context == 'groupsmap') {
+            $options['selected'] = true;
         }
-        return $menu;
+        $menu[] = ElggMenuItem::factory($options);
     }
+    
+    return $menu;
 }
 
 
