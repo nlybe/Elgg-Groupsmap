@@ -15,6 +15,7 @@ $zoom_box .= elgg_view('input/dropdown', array(
     'value' => $zoom,
     'options' => array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20)
 ));
+$zoom_box .= elgg_format_element('p', ['style' => 'font-size: 85%;font-style: italic;'], elgg_echo('groupsmap:widgets:settings:zoom:note'));
 echo elgg_format_element('div', ['class' => 'clear_box'], $zoom_box);
 
 

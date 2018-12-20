@@ -92,7 +92,9 @@ $language = array(
     'groupsmap:widgets:detail' => 'Show group location on map', 
     'groupsmap:widgets:nolocationdefined' => 'Location has not been defined for this group', 
     'groupsmap:widgets:settings:zoom' => 'Select zoom level on map: ',    
-    'groupsmap:widgets:settings:mapheight' => 'Enter a numeric value for the height of the map (in pixels): ', 
+    'groupsmap:widgets:settings:zoom:note' => 'To display new zoom level, please refresh the page after saving.',
+    'groupsmap:widgets:settings:mapheight' => 'Enter a numeric value for the height of the map (in pixels): ',
+    
 );
 
 add_translation("en", $language);
